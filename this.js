@@ -1,18 +1,18 @@
 // this current context ko refer karta hai
-// console.log(this)
-// let obj={
-//     'username':"shivesh",
-//     'age':22,
-//     greet:function()
-//     {
-//         console.log(`learning about this username is ${this.username}`)
-//     }
-// }
-// console.log(obj.username);
-// console.log(obj.greet());
-// obj.username="hitesh"
-// console.log(obj.username);
-// console.log(obj.greet());
+console.log(this)
+let obj={
+    'username':"shivesh",
+    'age':22,
+    greet:function()
+    {
+        console.log(`learning about this username is ${this.username}`)
+    }
+}
+console.log(obj.username);
+console.log(obj.greet());
+obj.username="hitesh"
+console.log(obj.username);
+console.log(obj.greet());
 
 function one()
 {
