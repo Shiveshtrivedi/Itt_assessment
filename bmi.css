@@ -1,0 +1,31 @@
+*{
+    background-color: #6e6e6a;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#height,#weight{
+    
+}
+#input_weight,#input_height{
+    height: 1.6rem;
+    width: 12rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 6%
+}
+#input_weight::placeholder,#input_height::placeholder{
+    color: #fff;
+    padding: 0 0 0 9rem;
+}
+#btn{
+    background-color: #4218d8;
+    height: 2rem;
+    border-radius: 21%;
+    color: #fff;
+}
