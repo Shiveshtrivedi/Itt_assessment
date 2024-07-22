@@ -16,6 +16,7 @@ formDataContainer.style.flex=1;
 formDataContainer.innerHTML = "";
 
 Object.keys(formData).forEach((key) => {
+  if (key !== 'id' && key !== 'password') {
   const div = document.createElement("div");
   div.innerHTML = `
        <h2 class="field-name">${key}</h2>
@@ -28,6 +29,7 @@ Object.keys(formData).forEach((key) => {
     div.style.alignItems='center'
     div.style.flex=1;
   formDataContainer.appendChild(div);
+  }
 });
 document.getElementById('hamburger').addEventListener('click', function() {
   const navbar = document.querySelector('.navbar_container');
